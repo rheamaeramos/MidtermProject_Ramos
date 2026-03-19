@@ -1,0 +1,295 @@
+/* ---------------------- GENERAL BODY ---------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0F0A1E, #1A142E); /* Enhanced gradient */
+  color: #A594BD; /* Muted text */
+  overflow-x: hidden;
+}
+
+/* ---------------------- FRONT PAGE ---------------------- */
+.frontpage {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(135deg, #0F0A1E, #1A142E); /* deep gradient */
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.front-text h1, 
+.front-text h3, 
+.front-text p {
+  color: #BC7AF9; /* electric purple */
+  text-shadow: 0 0 10px #FF2D95;
+}
+
+.front-text h1 span {
+  color: #FF2D95;
+}
+
+.btn-get-started {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #BC7AF9;
+  color: #0F0A1E;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 20px #FF2D95, 0 0 40px #BC7AF9;
+  transition: 0.3s;
+  text-shadow: 0 0 5px #FF2D95; /* Cyberpunk glow */
+}
+
+.btn-get-started:hover {
+  box-shadow: 0 0 30px #FF2D95, 0 0 60px #BC7AF9;
+  transform: translateY(-2px);
+}
+
+.front-image img {
+  width: 250px;
+  border-radius: 50%;
+  border: 3px solid #FF2D95;
+  box-shadow: 0 0 20px #FF2D95, 0 0 40px #BC7AF9;
+}
+
+/* ---------------------- NAVBAR ---------------------- */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar button {
+  border: none;
+  background: rgba(26, 20, 46, 0.5); /* glass card background */
+  color: #BC7AF9;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FF2D95, 0 0 20px #BC7AF9;
+  transition: 0.3s;
+  text-shadow: 0 0 5px #FF2D95; /* Cyberpunk glow */
+}
+
+.navbar button:hover {
+  background: rgba(26, 20, 46, 0.8);
+  box-shadow: 0 0 20px #FF2D95, 0 0 40px #BC7AF9;
+}
+
+.active-tab {
+  background: rgba(26, 20, 46, 0.9);
+  box-shadow: 0 0 30px #FF2D95, 0 0 60px #BC7AF9;
+  color: #FF2D95;
+}
+
+/* ---------------------- SECTION CONTAINER ---------------------- */
+.section-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInSection 0.8s ease;
+  background: rgba(26, 20, 46, 0.8); /* Glassmorphism background */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@keyframes fadeInSection {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* ---------------------- HOME CARD GLASSMORPHISM ---------------------- */
+.home-card {
+  background: rgba(26, 20, 46, 0.8); /* semi-transparent glass */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 0 20px #FF2D95, 0 0 40px #BC7AF9; /* neon glow */
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* HOME CARD TEXT */
+.home-card h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #BC7AF9;
+  text-shadow: 0 0 5px #FF2D95;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #FF2D95;
+  box-shadow: 0 0 20px #FF2D95;
+}
+
+.profile-section h1 {
+  font-size: 26px;
+  color: #FF2D95;
+  text-shadow: 0 0 10px #BC7AF9;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 18px;
+  color: #A594BD;
+  margin-bottom: 20px;
+}
+
+.interests h3 {
+  font-size: 22px;
+  color: #BC7AF9;
+  text-shadow: 0 0 5px #FF2D95;
+  margin-bottom: 10px;
+}
+
+.interests ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 18px;
+  color: #A594BD;
+}
+
+.interests li {
+  margin-bottom: 8px;
+}
+
+/* ---------------------- SCROLL SNAPPING (OPTIONAL) ---------------------- */
+.page {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  background: linear-gradient(135deg, #0F0A1E, #1A142E); /* Dark futuristic background */
+}
+.card {
+  background: rgba(26, 20, 46, 0.8); /* Glassmorphism */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 0 20px #FF2D95, 0 0 40px #BC7AF9;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #A594BD;
+}
+
+.card h2 {
+  color: #BC7AF9;
+  text-shadow: 0 0 5px #FF2D95;
+}
+
+.card h3 {
+  color: #BC7AF9;
+  text-shadow: 0 0 3px #FF2D95;
+  margin-top: 20px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+/* PROJECTS CARDS / STACKED CAROUSEL */
+.projects-section {
+  position: relative;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  height: 400px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.project-card {
+  position: absolute;
+  width: 300px;
+  background: rgba(26, 20, 46, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px #FF2D95, 0 0 40px #BC7AF9;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 10px #FF2D95;
+}
+
+.project-info {
+  padding: 15px;
+  color: #A594BD;
+  text-align: left;
+}
+
+.project-info h3 {
+  color: #BC7AF9;
+  text-shadow: 0 0 5px #FF2D95;
+  margin-bottom: 8px;
+}
+
+.project-info p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #A594BD;
+}
+
+.carousel-buttons {
+  margin-top: 20px;
+}
+
+.carousel-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 25px;
+  border: none;
+  background: #BC7AF9;
+  color: #0F0A1E;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 20px #FF2D95, 0 0 40px #BC7AF9;
+  transition: 0.3s;
+}
+
+.carousel-buttons button:hover {
+  box-shadow: 0 0 30px #FF2D95, 0 0 60px #BC7AF9;
+  transform: translateY(-2px);
+}
