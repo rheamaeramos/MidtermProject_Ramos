@@ -12,13 +12,13 @@ function Projects() {
       title: "Bus Tracking System",
       description: "Real-time bus location tracker.",
       role: "Developer",
-      tech: "JavaScript, Google Maps API",
+      tech: "JavaScript",
     },
     {
       title: "Food Ordering App",
       description: "Order food online with delivery tracking.",
-      role: "Designer & Developer",
-      tech: "React.js, CSS, Firebase",
+      role: "Designer",
+      tech: "Figma,
     },
     {
       title: "Study Portal",
