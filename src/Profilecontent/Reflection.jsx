@@ -5,8 +5,8 @@ function Reflection() {
   
         <p><b>What I learned:</b></p>
         <p>
-          I learned full-stack development concepts and how React components
-          help in building structured and reusable UI.
+        “I learned the importance of full-stack development and discovered 
+        how React components make it easier to build organized user interfaces
         </p>
   
         <p><b>What I want to learn more:</b></p>

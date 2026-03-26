@@ -18,7 +18,7 @@ function Projects() {
       title: "Food Ordering App",
       description: "Order food online with delivery tracking.",
       role: "Designer",
-      tech: "Figma,
+      tech: "Figma"
     },
     {
       title: "Study Portal",
